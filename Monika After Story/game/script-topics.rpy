@@ -17968,7 +17968,6 @@ label monika_pizza:
     m 1lksdlb "So I can't weigh in on that particular debate. Sorry, [player]!"
     m 3huu "But I guess that means you'll get to see my first impression someday."
     return
-
 init 5 python:
     addEvent(
         Event(
@@ -18041,3 +18040,24 @@ label monika_overton:
     m 1eua "I {i}could{/i} finish this story right up to Current Norm, but I just wanted to describe it at a basic level in order to convey an example of how it can work."
     m 1huu "Thanks for listening~"
     return
+
+init 5 python:
+	addEvent(
+		Event(
+			persistent.event_database,
+			eventlabel="mon_sameroom", 
+			category=["romance"], 
+			prompt="Same Room"
+			pool=True 
+		)
+	)
+
+label mon_sameroom:
+	m 1eud "I can't help but feel a little sad sometimes..."
+	m 1ruc "Knowing that this is the closest I can get to you."
+	m 2ektdd "There's nothing more I want than to be in the same room as you, for real."
+	m 6dktpc "..."
+	m 2dktpu "And to feel your warmth."
+	m 5dktpa "Well, who knows? Maybe it'll be possible someday."
+	m 7fkbftda "Besides, I'll never get tired of being with you, even from here."
+	return
